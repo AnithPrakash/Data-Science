@@ -1,0 +1,441 @@
+
+
+print('Hello world!')
+
+print(22)
+
+34*4
+
+
+
+0.1+0.2-0.3!=0
+
+ab="T"
+  print(ab)
+
+
+
+print(ab)
+
+print("hello Anith")
+
+p="bruhh"
+p
+
+print(p[3])
+
+print(p[-2])
+
+print(len(p))
+
+w=-13
+print(abs(w))
+
+v="hello world!"
+v[4:-5]
+
+u="i love india"
+u[7:]
+
+u[::-1]
+
+n=10
+ b=20
+ c=n%b
+ print(c)
+ d=n//b
+ print(d)
+ x=n/b
+ x
+
+2**3
+
+f=4
+f+=3
+f
+
+g=3
+c=5
+g|=c
+g
+
+a=14
+c=1
+a>>=c
+print(a)
+
+for i in range(10):
+    if (i==4):
+      continue
+    print(i)
+
+for i in "poda":
+  print(i)
+
+es=input("enter that ")
+co=0
+co=len(es.split())
+print(co)
+
+A=set()
+print("0 is exit a other to continue")
+while(True):
+  num=int(input("enter"))
+  A.add(num)
+  if num ==0:
+    break
+print(A)
+
+def A(a,b):
+  f=a-b
+  return f
+
+
+j=int(input("numvber para "))
+h=int(input("para funde "))
+
+v=A(j,h)
+print(v)
+
+fh=["nk","hrlo","jd"]
+
+def j(food):
+  for i in food:
+    print(i)
+
+
+j(fh)
+
+sub=lambda a:a+10
+print(sub(9))
+
+import random
+coin=["dead","deading"]
+toss=random.choice(coin)
+toss
+
+import random
+dice=[1,2,3,4,5,6]
+toss=random.choice(dice)
+print(toss)
+
+import pandas
+A={"cars":["BMW","audi","benz"],
+   "po":[3,7,5]}
+newdic=pandas.DataFrame(A)
+print(newdic)
+
+import pandas as pd
+A=[3,7,5]
+newdic=pd.Series(A,index=range(3))
+print(newdic)
+
+cal={"day":430,"day2":300}
+y=pd.Series(cal)
+print(type(y))
+print(y)
+
+
+
+d={"name":["me","abhk","sree","sid"],"roll no":[2,3,5,6]}
+i=pd.DataFrame(d)
+print(i)
+
+from google.colab import files
+upload=files.upload()
+
+war=pd.read_csv("mtcars.csv")
+war
+
+war.head(10)
+
+war.info()
+
+war.wt
+
+war[["cyl","disp"]]
+
+import numpy as np
+ar=np.array([[1,2,3,4,5],[7,8,4,56,7]])
+ar
+
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+xp=np.array([0,24,65,46,66])
+yp=np.array([0,234,115,56,250])
+plt.scatter(xp,yp)
+font={'family':'serif','color':'blue','size':20}
+plt.xlabel("heu",fontdict=font)
+plt.grid(axis ='y')
+
+xp=np.array([0,24,65,47,56])
+yp=np.array([0,234,115,56,230])
+plt.scatter(xp,yp,)
+
+xp=np.array([0,20,65,46,66])
+yp=np.array([0,234,185,56,250])
+plt.scatter(xp,yp,);
+
+xp=np.array(['a','b','c','d'])
+yp=np.array([0,234,115,56])
+plt.barh (xp,yp,)
+
+x=np.random.normal(170,10,250)
+plt.hist(x)
+plt.show()
+
+x=pd.DataFrame(x)
+
+x.describe()
+
+x=np.array([170,10,250])
+plt.pie(x,autopct='%1.1f%%')
+plt.show()
+
+import seaborn as sns
+
+df=sns.load_dataset('tips')
+df.head()
+
+df=sns.load_dataset('tips')
+df.head()
+
+sns.lineplot(x="tip",y="total_bill",data=df);
+
+sns.countplot(x="smoker",data=df);
+
+sns.pairplot(data=df,hue="tip");
+
+sns.scatterplot(x="total_bill",y="tip",data=df);
+
+sns.histplot(data=df,x="tip",y="total_bill",);
+
+df=sns.load_dataset('flights')
+df.head(-10)
+
+import matplotlib.pyplot as plt
+
+
+
+plt.figure(figsize=(10,7))
+sns.lineplot(x="year",y="passengers",data=df)
+plt.xlabel=("year")
+plt.ylabel=("passenger");
+
+sns.stripplot(x="year",y="passengers",data=df)
+
+sns.swarmplot(x="year",y="passengers",data=df)
+
+sns.barplot(x="year",y="passengers",data=df)
+
+sns.swarmplot(x="year",y="passengers",data=df)
+
+df=sns.load_dataset('exercise')
+df.head()
+
+sns.barplot(x="id",y="diet",data=df)
+
+sns.countplot(x="kind",data=df)
+
+sns.stripplot(x="id",y="diet",data=df)
+
+df=sns.load_dataset("iris")
+df.head()
+
+sns.boxplot(x="species",y="sepal_length",data=df)
+
+sns.displot(x="sepal_width",data=df)
+
+
+
+sns.histplot(x="petal_length",data=df)
+
+df=sns.load_dataset("diamonds")
+df.head()
+
+df.corr()
+
+sns.heatmap(data=df.corr())
+
+sns.heatmap(data=df.corr(),cmap='tab20');
+
+sns.heatmap(data=df.corr(),cmap='tab20',center=0,annot=True);
+
+sns.heatmap(data=df.corr(),annot=True,linewidth=2,linecolor="black",center=0);
+
+df=sns.load_dataset('mpg')
+df.head()
+
+sns.jointplot(x='mpg',y='acceleration',hue='model_year',data=df)
+
+sns.jointplot(x='mpg',y='acceleration',kind='hex',data=df)
+
+sns.jointplot(x='mpg',y='acceleration',kind='kde',data=df)
+
+sns.barplot(x='mpg',y='acceleration',data=df)
+
+sns.displot(x='mpg',y='acceleration',data=df)
+
+sns.scatterplot(x='mpg',y='acceleration',hue='model_year',data=df)
+
+import pandas as pd
+
+import requests
+
+from bs4 import BeautifulSoup
+
+url="https://www.flipkart.com"
+
+r=requests.get(url)
+print(r)
+
+url1="https://www.flipkart.com/search?q=mobile%20under%205000&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+
+r=requests.get(url1)
+print(r)
+
+soup=BeautifulSoup(r.text,"lxml")
+
+np=soup.find("a",class_="_1LKTO3").get("href")
+print(np)
+
+cnp="https://www.flipkart.com"+np
+print(cnp)
+
+for i in range(2,10):
+    url="https://www.flipkart.com/search?q=mobile+under+50000&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page="+str(i)
+    p=requests.get(url)
+    soup=BeautifulSoup(p.text,"lxml")
+    np=soup.find("a",class_="_1LKTO3").get("href")
+    cnp="https://www.flipkart.com"+np
+    print(cnp)
+
+prdct_name=[]
+price=[]
+descriptn=[]
+review=[]
+for i in range(2,10):
+    url="https://www.flipkart.com/search?q=mobile+under+50000&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page="+str(i)
+    p=requests.get(url)
+    soup=BeautifulSoup(p.text,"lxml")
+    box=soup.find("div",class_="_1YokD2 _3Mn1Gg")
+    names=box.find_all("div",class_="_4rR01T")
+    for i in names:
+        name=i.text
+        prdct_name.append(name)
+    print(len(prdct_name))
+    #print(prdct_name)
+
+    prices=box.find_all("div",class_="_30jeq3 _1_WHN1")
+    for i in prices:
+        p=i.text
+        price.append(p)
+    print(len(price))
+    #print(price)
+
+    des=box.find_all("div",class_="fMghEO")
+    for i in des:
+      d=i.text
+      descriptn.append(d)
+    print(len(descriptn))
+    #print(descriptn)
+
+    rev=box.find_all("div",class_="_3LWZlK")
+    for i in rev:
+      r=i.text
+      review.append(r)
+    print(len(review))
+    #print(review)
+
+df=pd.DataFrame({"Product_name":prdct_name,"price":price,"des":descriptn})
+df
+
+df.to_csv("C://Downloads/flip.csv")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+names=box.find_all("div",class_="_4rR01T")
+for i in names:
+    name=i.text
+    prdct_name.append(name)
+print(len(prdct_name))
+print(prdct_name)
+
+prices=box.find_all("div",class_="_30jeq3 _1_WHN1")
+for i in prices:
+  p=i.text
+  price.append(p)
+print(len(price))
+print(price)
+
+
+
+des=box.find_all("div",class_="fMghEO")
+for i in des:
+  d=i.text
+  descriptn.append(d)
+print(descriptn)
+
+rev=box.find_all("div",class_="_3LWZlK")
+for i in rev:
+  r=i.text
+  review.append(r)
+print(review)
+
+Box=[]
+box=soup.find_all("div","_1YokD2 _3Mn1Gg")
+for i in box:
+    B=i.text
+    Box.append(B)
+print(Box)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

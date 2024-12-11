@@ -20,8 +20,8 @@ SVMs are powerful classifiers that find the optimal hyperplane which maximizes t
 ### K-Nearest Neighbors (KNN)
 KNN is a simple, instance-based learning algorithm used for classification and regression. It assigns a class to a data point based on the majority class of its K nearest neighbors in the feature space.
 
-K-Means Clustering
+### K-Means Clustering
 K-Means Clustering is an unsupervised learning algorithm used for partitioning a dataset into K distinct, non-overlapping subsets (clusters). It aims to minimize the variance within each cluster, grouping similar data points together.
 
-Principal Component Analysis (PCA)
+### Principal Component Analysis (PCA)
 PCA is a dimensionality reduction technique that transforms high-dimensional data into fewer dimensions by projecting it onto new axes (principal components). It captures the maximum variance in the data with the least number of components.

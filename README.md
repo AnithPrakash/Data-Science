@@ -14,10 +14,10 @@ Decision Trees are non-parametric supervised learning algorithms used for classi
 ### Random Forest
 Random Forest is an ensemble learning method that constructs multiple decision trees during training and outputs the mode of the classes for classification or mean prediction for regression. It improves accuracy and reduces overfitting.
 
-Support Vector Machines (SVM)
+### Support Vector Machines (SVM)
 SVMs are powerful classifiers that find the optimal hyperplane which maximizes the margin between different classes in the feature space. They are effective in high-dimensional spaces and when the number of dimensions exceeds the number of samples.
 
-K-Nearest Neighbors (KNN)
+### K-Nearest Neighbors (KNN)
 KNN is a simple, instance-based learning algorithm used for classification and regression. It assigns a class to a data point based on the majority class of its K nearest neighbors in the feature space.
 
 K-Means Clustering
